@@ -70,6 +70,8 @@ img{
     width:400px;
     border:1px solid black;
     margin-left:5%;
+    max-width:45%;
+    min-width:25%;
 }
 h2, h3{
     text-align:center;
@@ -84,17 +86,38 @@ margin-left: 5%;
 }
 video{
     width: 500px;
+    max-width:55%;
+    min-width: 35%;
     height: 400px;
+    position: relative;
+    flex: 25%;
+}
+.Media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 @media (max-width: 600px){
-    .Cr1 .Cr2{
+    .Cr1 .Cr2 .Cr3 .Cr4 .Cr5 .Cr6 .Cr7 .Cr8{
         display: flex;
+        flex:100%;
         flex-direction: column;
+        max-width: 100%;
     }
-}
+    @media (max-width: 800px){
+        /* this will mkae the images dsiplay by themselves on a smaller screen */
+        .Cr1 .Cr2 .Cr3 .Cr4 .Cr5 .Cr6 .Cr7 .Cr8{
+            display:flex;
+            flex-direction: column;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
 
 
-/* i really need to fix the positions */
+/* i hate messing with positions */
+/* fix media layout */
 
 
 /*
